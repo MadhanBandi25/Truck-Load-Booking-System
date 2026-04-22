@@ -78,7 +78,7 @@ public class UserController {
 
     }
 
-    @PutMapping("/{id}/activate")
+    @PatchMapping("/{id}/activate")
     public ResponseEntity<String> activateUser(@PathVariable Long id){
         userService.activateUser(id);
         return ResponseEntity.ok("User activated successfully");

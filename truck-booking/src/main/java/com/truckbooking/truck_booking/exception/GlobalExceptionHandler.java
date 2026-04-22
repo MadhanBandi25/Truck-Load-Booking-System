@@ -110,7 +110,7 @@ public class GlobalExceptionHandler {
                         LocalDateTime.now(),
                         HttpStatus.INTERNAL_SERVER_ERROR.value(),
                         "Internal Server Error",
-                        "Something went wrong. Please try again.",
+                        "Something went wrong. Check the URL OR Please try again.",
                         request.getRequestURI()
                 )
         );
