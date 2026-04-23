@@ -66,7 +66,7 @@ public class TruckServiceImpl implements TruckService {
          Truck truck = getTruck(truckId);
 
          if (!truck.getOperator().getId().equals(operatorId)){
-             throw new UnauthorizedException("Access denied");
+             throw new UnauthorizedException("Access denied not a operator");
          }
          return TruckMapper.toResponse(truck);
     }
